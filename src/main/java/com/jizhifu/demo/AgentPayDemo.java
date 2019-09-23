@@ -26,11 +26,11 @@ public class AgentPayDemo {
         AgentPayReq agentPayReq = new AgentPayReq();
         agentPayReq.setOutOrderId(new Date().getTime() + "");//商户订单号(长度不超过36 位)
         agentPayReq.setPayAmount(new BigDecimal("1000"));//代付金(CNY)
-        agentPayReq.setPayType(1);//支付方式：1-银行卡，21- 支付宝转银行卡
+        agentPayReq.setPayType(1);//支付方式：1-银行卡
         agentPayReq.setPayeeName("小明");//收款人名称(长度 30 位内)
         agentPayReq.setPayeeAccount("623269325269589564");//收款人账号
         agentPayReq.setAccountBankName("平安银行");//收款银行
-        agentPayReq.setBranchBankName("港青街支行");//收款银行支行
+        agentPayReq.setBranchBankName("港青街支行");//收款银行支行,如何获取不到则传空字符串
         agentPayReq.setReceiveUrl("www.baidu.com");//后台通知回调地址
         agentPayReq.setTimestamp(new Date().getTime());//当前时间戳
         agentPayReq.setNoncestr(RandomGeneratorUtils.generateRandomStr(10));//随机字符串
