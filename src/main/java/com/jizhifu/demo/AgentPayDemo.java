@@ -30,7 +30,7 @@ public class AgentPayDemo {
         agentPayReq.setPayeeName("小明");//收款人名称(长度 30 位内)
         agentPayReq.setPayeeAccount("623269325269589564");//收款人账号
         agentPayReq.setAccountBankName("平安银行");//收款银行
-        agentPayReq.setBranchBankName("港青街支行");//收款银行支行,如何获取不到则传空字符串
+        agentPayReq.setBranchBankName("港青街支行");//收款银行支行,如果获取不到则传空字符串
         agentPayReq.setReceiveUrl("www.baidu.com");//后台通知回调地址
         agentPayReq.setTimestamp(new Date().getTime());//当前时间戳
         agentPayReq.setNoncestr(RandomGeneratorUtils.generateRandomStr(10));//随机字符串
