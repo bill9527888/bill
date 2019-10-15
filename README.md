@@ -1,1 +1,1 @@
-api文档地址：https://jipay.oss-cn-shenzhen.aliyuncs.com/jizhifu/apidoc_v2.pdf
+里面有phpDemo：billphp-demo
