@@ -12,6 +12,7 @@ public class GoldenReq {
     private String payerName;//付款人名称(长度 30 位内)
     private String receiveUrl;//后台通知回调地址
     private String sign;//签名
+    private String customerPhone;//付款人手机号
 
     public String getOutOrderId() {
         return outOrderId;
@@ -59,5 +60,13 @@ public class GoldenReq {
 
     public void setSign(String sign) {
         this.sign = sign;
+    }
+
+    public String getCustomerPhone() {
+        return customerPhone;
+    }
+
+    public void setCustomerPhone(String customerPhone) {
+        this.customerPhone = customerPhone;
     }
 }

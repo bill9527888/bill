@@ -31,6 +31,7 @@ public class GoldenDemo {
         goldenReq.setPayType(1);//支付方式：1-银行卡，21- 支付宝转银行卡
         goldenReq.setPayerName("小明");//付款人名称(长度 30 位内)
         goldenReq.setReceiveUrl("www.baidu.com");//后台通知回调地址，订单成功后会向这个地址回调
+        goldenReq.setCustomerPhone("19965412404");
 
         //获取签名
         String signUnencrypted = goldenReq.getOutOrderId() + goldenReq.getReceiveUrl() + goldenReq.getCustomerAmountCny()

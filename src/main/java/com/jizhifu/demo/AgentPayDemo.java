@@ -34,6 +34,7 @@ public class AgentPayDemo {
         agentPayReq.setReceiveUrl("www.baidu.com");//后台通知回调地址
         agentPayReq.setTimestamp(new Date().getTime());//当前时间戳
         agentPayReq.setNoncestr(RandomGeneratorUtils.generateRandomStr(10));//随机字符串
+        agentPayReq.setCustomerPhone("19965412404");
 
         //获取签名
         String signUnencrypted = agentPayReq.getPayeeName() + agentPayReq.getPayeeAccount() + agentPayReq.getPayAmount()

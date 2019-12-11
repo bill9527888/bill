@@ -17,6 +17,7 @@ public class AgentPayReq {
     private Long timestamp; //当前时间戳
     private String noncestr; //随机字符串
     private String sign;//签名
+    private String customerPhone;//收款人手机号
 
     public String getOutOrderId() {
         return outOrderId;
@@ -104,5 +105,13 @@ public class AgentPayReq {
 
     public void setSign(String sign) {
         this.sign = sign;
+    }
+
+    public String getCustomerPhone() {
+        return customerPhone;
+    }
+
+    public void setCustomerPhone(String customerPhone) {
+        this.customerPhone = customerPhone;
     }
 }
