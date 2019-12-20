@@ -4,12 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 代付订单查询请求类
+ * 订单查询请求类
  */
-public class AgentPayQueryReq {
+public class GoldenQueryBatchReq {
     private String appKey; //appKey(商户后台设置可以获取到值)
-    private String outOrderId; //商户订单号
-    private List<String> outOrderIds = new ArrayList<>();//商户订单号，多个
+    private List<String> outOrderIds = new ArrayList<>(); //商户订单号，多个
 
     public String getAppKey() {
         return appKey;
@@ -17,14 +16,6 @@ public class AgentPayQueryReq {
 
     public void setAppKey(String appKey) {
         this.appKey = appKey;
-    }
-
-    public String getOutOrderId() {
-        return outOrderId;
-    }
-
-    public void setOutOrderId(String outOrderId) {
-        this.outOrderId = outOrderId;
     }
 
     public List<String> getOutOrderIds() {

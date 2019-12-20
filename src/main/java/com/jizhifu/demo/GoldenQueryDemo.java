@@ -24,7 +24,7 @@ public class GoldenQueryDemo {
 
         GoldenQueryReq goldenQueryReq = new GoldenQueryReq();
         goldenQueryReq.setAppKey(appKey);//appKey(商户后台设置可以获取到值)
-        goldenQueryReq.setOrderId("1569228245719");//商户订单号
+        goldenQueryReq.setOrderId("1565772190798");//商户订单号
 
         //发送请求
         String result = OkHttpUtils.post(url, JSON.toJSONString(goldenQueryReq));
